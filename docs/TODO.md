@@ -61,14 +61,14 @@ last_updated: 2026-03-02
     - ✓ `pnpm lint` and `pnpm typecheck` pass
     - ✓ `.gitignore`, `.prettierignore` set up
 
-- [ ] **[CP-01-004] Configure environment variables**
-  - **Status:** Not started | **Priority:** P0 | **Estimate:** 1
+- [x] **[CP-01-004] Configure environment variables**
+  - **Status:** Done | **Priority:** P0 | **Estimate:** 1
   - **Deliverable:** `.env.example` with all required variables
   - **Acceptance:**
-    - [] `NEXT_PUBLIC_SANITY_PROJECT_ID` placeholder
-    - [] `NEXT_PUBLIC_SANITY_DATASET` placeholder
-    - [] `SANITY_API_READ_TOKEN` placeholder
-    - [] Secrets kept out of Git (`.env.local` in `.gitignore`)
+    - ✓ `NEXT_PUBLIC_SANITY_PROJECT_ID` placeholder
+    - ✓ `NEXT_PUBLIC_SANITY_DATASET` placeholder
+    - ✓ `SANITY_API_READ_TOKEN` placeholder
+    - ✓ Secrets kept out of Git (`.env.local` in `.gitignore`)
 
 ---
 
