@@ -1,3 +1,0 @@
-module.exports=[97257,a=>{a.n(a.i(3383))},43604,a=>{a.n(a.i(46899))},7907,a=>{a.n(a.i(66478))},45019,a=>{a.n(a.i(25284))},92486,a=>{"use strict";var b=a.i(81332);function c(){return(0,b.jsxs)("main",{className:"flex min-h-screen flex-col items-center justify-center p-8",children:[(0,b.jsx)("h1",{className:"text-4xl font-bold",children:"Carinya Parc"}),(0,b.jsx)("p",{className:"mt-4 text-lg text-gray-600",children:"A regenerative farm in NSW, Australia"})]})}a.s(["default",()=>c])}];
-
-//# sourceMappingURL=_778a01fd._.js.map
