@@ -18,7 +18,7 @@ Follow these steps **exactly**:
 
 ### 1. Locate the task and supporting docs
 
-- Open `docs/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
+- Open `.zen/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
 - Verify the directory `.zen/tasks/{TASK_ID}/` exists.
 - Read:
   - `.zen/tasks/{TASK_ID}/requirements.md` (FRD)
@@ -72,7 +72,7 @@ After implementation:
 
 - Update `.zen/tasks/{TASK_ID}/design.md` if the implementation required any technical changes from the reviewed plan.
 - Update `.zen/tasks/{TASK_ID}/requirements.md` only if requirements changed (avoid rewriting).
-- Update `docs/TODO.md` for the task:
+- Update `.zen/TODO.md` for the task:
   - Set the checkbox to `[x]`
   - Set `**Status:** Done`
   - Keep Priority/Estimate unchanged unless there is a documented reason

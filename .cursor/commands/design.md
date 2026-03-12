@@ -2,7 +2,7 @@
 
 ## Overview
 
-Generate a Technical Design Document (TDD) for a specific task from the project roadmap (`docs/TODO.md`).
+Generate a Technical Design Document (TDD) for a specific task from the project roadmap (`.zen/TODO.md`).
 
 ## Instructions
 
@@ -18,18 +18,18 @@ Follow these steps **exactly**:
 
 ### 1. Look up the task
 
-- Open `docs/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
+- Open `.zen/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
 - Extract: task title, status, priority, estimate, deliverable, and all acceptance criteria.
 - Also note which Epic the task belongs to and any related/adjacent tasks.
 
 ### 2. Read the requirements document
 
 - Check if `.zen/tasks/{TASK_ID}/requirements.md` exists. If it does, read it -- this is the FRD (Feature Requirements Document) that provides the business context. Reference it but do not duplicate its content.
-- If no requirements document exists, gather context directly from `docs/TODO.md` acceptance criteria.
+- If no requirements document exists, gather context directly from `.zen/TODO.md` acceptance criteria.
 
 ### 3. Gather technical context
 
-- Read `docs/architecture.md` for the confirmed stack, high-level architecture, content model, and rendering strategy.
+- Read `docs/tech.md` for the confirmed stack, high-level architecture, content model, and rendering strategy.
 - Read `.zen/features.md` for the WordPress feature inventory (reference where the design maps to WordPress equivalents).
 - Scan the existing codebase structure to understand current file layout, existing patterns, and conventions.
 - Use these as **source material**. Do not invent specifications -- if information is missing, mark it as **TBD** and add it to the Questions section of the requirements document or note it in the Risks section.

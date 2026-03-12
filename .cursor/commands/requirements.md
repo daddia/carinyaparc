@@ -2,7 +2,7 @@
 
 ## Overview
 
-Generate a Requirements Document for a specific task from the project roadmap (`docs/TODO.md`).
+Generate a Requirements Document for a specific task from the project roadmap (`.zen/TODO.md`).
 
 ## Instructions
 
@@ -18,14 +18,14 @@ Follow these steps **exactly**:
 
 ### 1. Look up the task
 
-- Open `docs/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
+- Open `.zen/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
 - Extract: task title, status, priority, estimate, deliverable, and all acceptance criteria.
 - Also note which Epic the task belongs to and any related/adjacent tasks.
 
 ### 2. Gather context
 
 - Read `docs/product.md` for product vision, personas, pillars, and constraints.
-- Read `docs/architecture.md` for the high-level architecture, content model, and IA.
+- Read `docs/tech.md` for the high-level architecture, content model, and IA.
 - Read `.zen/features.md` for the WordPress feature inventory (reference where applicable).
 - Use these as **source material**. Do not invent requirements -- if information is missing, mark it as **TBD** and add it to the Questions section.
 

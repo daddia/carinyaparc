@@ -12,19 +12,22 @@ It captures product intent, high-level design, and technical decisions so that c
 
 ## Quick links
 
-| File                   | Purpose                                                                 |
-| ---------------------- | ----------------------------------------------------------------------- |
-| `product.md`           | Product overview – who we serve, what we solve, and what success means. |
-| `high-level-design.md` | High-level design – IA, content model, architecture, and workflows.     |
+| File            | Purpose                                                                 |
+| --------------- | ----------------------------------------------------------------------- |
+| `product.md`    | Product overview -- who we serve, what we solve, and what success means. |
+| `tech.md`       | High-level design -- IA, content model, architecture, and workflows.    |
+| `structure.md`  | Project structure -- monorepo layout, packages, naming conventions.     |
+| `TODO.md`       | Task tracking and backlog.                                              |
 
 ## Recommended reading order
 
 ### For content + product
 
 1. **`product.md`**
-2. **`high-level-design.md`** (focus on IA, workflows, and content model)
+2. **`tech.md`** (focus on IA, workflows, and content model)
 
 ### For engineering
 
-1. **`high-level-design.md`**
-2. **`product.md`**
+1. **`tech.md`**
+2. **`structure.md`**
+3. **`product.md`**

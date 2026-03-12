@@ -51,7 +51,7 @@ Read the following for context on what "correct" looks like in this project:
 - `docs/agents.md` -- commands, checks, conventions, and expectations
 - `docs/structure.md` -- where routes, components, hooks, tests, and docs live
 - `docs/tech.md` -- stack, tools, versions, and constraints
-- `docs/architecture.md` -- confirmed stack, high-level architecture, content model
+- `docs/tech.md` -- confirmed stack, high-level architecture, content model
 
 These are the **coding standards, architecture guidelines, and test requirements** referenced in the prompt. Do not invent standards -- use what these docs define.
 

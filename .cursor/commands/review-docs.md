@@ -27,7 +27,7 @@ Follow these steps **exactly**:
 
 ### 1. Locate the task and documents
 
-- Open `docs/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
+- Open `.zen/TODO.md` and find the task matching the given Task ID (e.g. `[CP-01-001]`).
 - Verify the directory `.zen/tasks/{TASK_ID}/` exists.
 - Verify these files exist:
   - `.zen/tasks/{TASK_ID}/requirements.md`
@@ -53,15 +53,16 @@ Read and apply the policies/quality gates from:
 
 Use these as the canonical sources of truth:
 
-- `docs/TODO.md` (acceptance criteria, deliverables, priorities, estimates)
+- `.zen/TODO.md` (acceptance criteria, deliverables, priorities, estimates)
 - `docs/product.md` (constraints that affect requirements)
-- `docs/architecture.md` (confirmed stack + architectural decisions)
+- `docs/tech.md` (confirmed stack + architectural decisions)
+- `docs/structure.md` (project structure)
 - `.zen/features.md` (WordPress feature inventory; only reference if relevant)
 
 If something is not specified in sources:
 
 - Prefer to **make an opinionated decision** using leading best-practice defaults.
-- Record it explicitly as a **Decision** with rationale and a source citation where possible (e.g., an official doc link or a reference to `docs/architecture.md`).
+- Record it explicitly as a **Decision** with rationale and a source citation where possible (e.g., an official doc link or a reference to `docs/tech.md`).
 - Only leave **TBD** when a decision is impossible without a real external value (e.g., account IDs, tokens, vendor credentials, DNS access) or when multiple options materially change scope and no decision can be responsibly made.
 
 ### 4. Review against current website progress (repo reality check)
@@ -127,7 +128,7 @@ Without changing the template’s headings, ensure:
 - Security requirements are explicit (even for infra tasks: supply chain, secrets management, version pinning)
 - Error handling strategy covers build/CI failures and developer experience
 - Testing strategy includes verification steps and CI expectations
-- Deployment notes align with the repo/host assumptions in `docs/architecture.md`
+- Deployment notes align with the repo/host assumptions in `docs/tech.md`
 - References include a link to the FRD and relevant docs
 
 Apply edits directly to `.zen/tasks/{TASK_ID}/design.md`.
