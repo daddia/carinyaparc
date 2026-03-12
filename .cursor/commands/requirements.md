@@ -43,6 +43,7 @@ You are acting as the role defined in `.zen/library/requirements.prompt`. Read t
 Use `.zen/library/requirements.md.tmpl` as the **exact structure** for the output document. Replace all template variables (`{{ .VARIABLE }}`) with concrete values derived from the task and context gathered above.
 
 Key rules:
+
 - **FEATURE_NAME**: Use the task title from `TODO.md`
 - **VERSION**: `0.1`
 - **STATUS**: `Draft`
@@ -65,6 +66,7 @@ Key rules:
 ### 6. Confirm
 
 After saving, report back:
+
 - The task ID and title
 - The file path where the requirements document was saved
 - A brief summary of the key requirements (3-5 bullet points)

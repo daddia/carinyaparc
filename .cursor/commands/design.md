@@ -48,6 +48,7 @@ You are acting as the role defined in `.zen/library/design.prompt`. Read that fi
 Use `.zen/library/design.md.tmpl` as the **exact structure** for the output document. Replace all template variables (`{{ .VARIABLE }}`) with concrete values derived from the task and context gathered above.
 
 Key rules:
+
 - **FEATURE_NAME**: Use the task title from `TODO.md`
 - **VERSION**: `0.1`
 - **STATUS**: `Draft`
@@ -73,6 +74,7 @@ Key rules:
 ### 7. Confirm
 
 After saving, report back:
+
 - The task ID and title
 - The file path where the design document was saved
 - A brief summary of the key technical decisions (3-5 bullet points)

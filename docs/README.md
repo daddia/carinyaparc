@@ -12,10 +12,10 @@ It captures product intent, high-level design, and technical decisions so that c
 
 ## Quick links
 
-| File                    | Purpose                                                                 |
-| ----------------------- | ----------------------------------------------------------------------- |
-| `product.md`            | Product overview – who we serve, what we solve, and what success means. |
-| `high-level-design.md`  | High-level design – IA, content model, architecture, and workflows.     |
+| File                   | Purpose                                                                 |
+| ---------------------- | ----------------------------------------------------------------------- |
+| `product.md`           | Product overview – who we serve, what we solve, and what success means. |
+| `high-level-design.md` | High-level design – IA, content model, architecture, and workflows.     |
 
 ## Recommended reading order
 
@@ -28,4 +28,3 @@ It captures product intent, high-level design, and technical decisions so that c
 
 1. **`high-level-design.md`**
 2. **`product.md`**
-

@@ -14,7 +14,7 @@ The user will invoke this command as:
 
 **TARGET** is optional and can be one of:
 
-- *(empty)* -- review all uncommitted changes (`git diff` + `git diff --staged`)
+- _(empty)_ -- review all uncommitted changes (`git diff` + `git diff --staged`)
 - `staged` -- review only staged changes (`git diff --staged`)
 - `branch` -- review current branch vs `main` (`git diff main...HEAD`)
 - A **file path or glob** -- review only the specified files (e.g. `src/components/HeroSection.tsx`)
@@ -25,11 +25,11 @@ Follow these steps **exactly**:
 
 Based on TARGET:
 
-| TARGET | Diff command |
-|--------|-------------|
-| *(empty)* | `git diff` + `git diff --staged` (combined) |
-| `staged` | `git diff --staged` |
-| `branch` | `git diff main...HEAD` |
+| TARGET         | Diff command                                                     |
+| -------------- | ---------------------------------------------------------------- |
+| _(empty)_      | `git diff` + `git diff --staged` (combined)                      |
+| `staged`       | `git diff --staged`                                              |
+| `branch`       | `git diff main...HEAD`                                           |
 | file path/glob | `git diff -- {path}` (falls back to reading the file if no diff) |
 
 - Capture the full diff output and the list of changed files.
@@ -72,12 +72,12 @@ Follow the workflow from the code-review prompt, applied to the diff gathered in
 
 Categorise every finding into one of:
 
-| Category | Meaning | Blocks merge? |
-|----------|---------|---------------|
-| **Blocking** | Must fix before merge -- security vulnerability, correctness bug, breaking change, architectural violation | Yes |
-| **Warning** | Should fix -- test gap, performance concern, missing error handling | Strongly recommended |
-| **Suggestion** | Could improve -- refactoring opportunity, readability, minor optimisation | No |
-| **Positive** | Good practice worth acknowledging | No |
+| Category       | Meaning                                                                                                    | Blocks merge?        |
+| -------------- | ---------------------------------------------------------------------------------------------------------- | -------------------- |
+| **Blocking**   | Must fix before merge -- security vulnerability, correctness bug, breaking change, architectural violation | Yes                  |
+| **Warning**    | Should fix -- test gap, performance concern, missing error handling                                        | Strongly recommended |
+| **Suggestion** | Could improve -- refactoring opportunity, readability, minor optimisation                                  | No                   |
+| **Positive**   | Good practice worth acknowledging                                                                          | No                   |
 
 For each finding, include:
 

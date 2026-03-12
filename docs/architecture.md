@@ -276,4 +276,3 @@ last_updated: 2026-03-02
 - **Taxonomy complexity**: tags as references vs simple string arrays.
 - **Page builder scope**: minimal section set vs richer modular system.
 - **Search**: none initially vs lightweight search (client-side index) vs external (Algolia).
-
