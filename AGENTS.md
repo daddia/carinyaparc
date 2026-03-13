@@ -4,11 +4,11 @@ Carinya Parc is a Next.js 16 App Router website (rebuild) for a regenerative far
 
 Before making changes, read the docs in `docs/`. Treat them as authoritative -- if code and docs disagree, fix it.
 
-| Doc              | Purpose                                                       |
-| ---------------- | ------------------------------------------------------------- |
-| `docs/product.md`   | Product vision, personas, pillars, non-goals                 |
-| `docs/tech.md`      | High-level design: IA, Sanity content model, architecture    |
-| `docs/structure.md`  | Monorepo layout, packages, naming conventions, planned dirs |
+| Doc                 | Purpose                                                     |
+| ------------------- | ----------------------------------------------------------- |
+| `docs/product.md`   | Product vision, personas, pillars, non-goals                |
+| `docs/tech.md`      | High-level design: IA, Sanity content model, architecture   |
+| `docs/structure.md` | Monorepo layout, packages, naming conventions, planned dirs |
 
 ## Setup commands
 
@@ -67,21 +67,21 @@ Treat any failure as a blocker, not a warning.
 - Server components by default; use `"use client"` sparingly.
 - Tailwind utilities for styling; prefer Base UI accessible primitives.
 - Australian English spelling throughout.
-- Comments explain *why*, not *what*. No obvious narration.
+- Comments explain _why_, not _what_. No obvious narration.
 - Fix lint errors before committing. Do not suppress ESLint rules without a documented reason.
 
 ## Naming conventions
 
-| Thing             | Convention                  | Example                      |
-| ----------------- | --------------------------- | ---------------------------- |
-| Route folders     | kebab-case                  | `the-property/`, `[slug]/`   |
-| Components        | PascalCase `.tsx`           | `HeroSection.tsx`            |
-| Hooks             | `use-` prefix, kebab-case   | `use-mobile.ts`             |
-| Utilities / lib   | kebab-case `.ts`            | `format-date.ts`            |
-| Tests             | `.test.ts` / `.test.tsx`    | `hero-section.test.tsx`     |
-| MDX content       | kebab-case `.mdx`           | `slow-roasted-beef.mdx`    |
-| Sanity schemas    | kebab-case `.ts`            | `recipe.ts`                 |
-| Shared packages   | `@repo/<name>`              | `@repo/tailwind-config`    |
+| Thing           | Convention                | Example                    |
+| --------------- | ------------------------- | -------------------------- |
+| Route folders   | kebab-case                | `the-property/`, `[slug]/` |
+| Components      | PascalCase `.tsx`         | `HeroSection.tsx`          |
+| Hooks           | `use-` prefix, kebab-case | `use-mobile.ts`            |
+| Utilities / lib | kebab-case `.ts`          | `format-date.ts`           |
+| Tests           | `.test.ts` / `.test.tsx`  | `hero-section.test.tsx`    |
+| MDX content     | kebab-case `.mdx`         | `slow-roasted-beef.mdx`    |
+| Sanity schemas  | kebab-case `.ts`          | `recipe.ts`                |
+| Shared packages | `@repo/<name>`            | `@repo/tailwind-config`    |
 
 ## File placement
 
@@ -100,9 +100,9 @@ Many of these directories are planned but not yet created. See `docs/structure.m
 
 Defined in `apps/site/tsconfig.json`:
 
-| Alias  | Maps to   |
-| ------ | --------- |
-| `@/*`  | `./src/*` |
+| Alias | Maps to   |
+| ----- | --------- |
+| `@/*` | `./src/*` |
 
 Shared packages are imported by package name (e.g., `@repo/tailwind-config` via CSS `@import`, `@repo/eslint-config` via extends).
 
@@ -168,5 +168,5 @@ Keep docs in sync with code. When code and docs disagree, that is a bug.
 - Keep diffs small and focused (one feature or bug per change).
 - Run all pre-flight checks before marking work complete.
 - Update tests and docs alongside code.
-- Explain *why* decisions were made, especially around UX, performance, and data.
+- Explain _why_ decisions were made, especially around UX, performance, and data.
 - Do not mix refactors with feature work unless the refactor is essential.
